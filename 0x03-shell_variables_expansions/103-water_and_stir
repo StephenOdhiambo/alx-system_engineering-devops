@@ -1,3 +1,2 @@
 #!/bin/bash
-export BESTCHOL=$(expr "$(echo "$WATER" | tr -cd '0-9')" + "$(echo "$STIR" | tr -cd '0-9')" | rev)
-
+result_base="bestchol" && echo "Result in base $result_base: $(echo "ibase=base water;obase=base bestchol;${WATER} + ${STIR}" | bc)"
