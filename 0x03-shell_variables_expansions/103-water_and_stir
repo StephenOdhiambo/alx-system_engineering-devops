@@ -1,2 +1,2 @@
 #!/bin/bash
-result_base="bestchol" && echo "Result in base $result_base: $(echo "ibase=base water;obase=base bestchol;${WATER} + ${STIR}" | bc)"
+echo $(printf %0 $((5#$(echo $WATER | tr 'watear' '01234'))) + $((5#$(echo $ STIR | tr 'stir.' '01234'))) | tr '0123456' 'bestchol') 
