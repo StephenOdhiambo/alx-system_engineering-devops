@@ -1,2 +1,3 @@
 #!/bin/bash
-export BESTCHOL=$((WATER + STIR)); echo "The result in base bestchol is: $BESTCHOL"
+export BESTCHOL=$(expr "$(echo "$WATER" | tr -cd '0-9')" + "$(echo "$STIR" | tr -cd '0-9')" | rev)
+
